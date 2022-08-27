@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	max-width: 100%;
+}
 
 html {
     font-size: 62.5%;
@@ -135,11 +138,11 @@ header a, footer a {
 
 .projects-display {
 	width: 100%;
-	height: 50%;
+	height: 80vh;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-	align-content: space-evenly;
+	align-content: space-around;
 }
 
 .projects-display a {
@@ -161,9 +164,13 @@ header a, footer a {
 
 footer {
 	width: 100%;
-	height:10rem;
+	height:12rem;
 	padding: 1% 0;
 	background-color: lightblue;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	justify-content: center;
 }
 
 footer h3 {
@@ -171,9 +178,27 @@ footer h3 {
 }
 
 footer a {
-	width: 20vw;
+	width: 20%;
+}
+header a:hover, footer a:hover {
+	background-color: lightgreen;
 }
 
+.contact-links {
+	padding: 2% 0;
+	height: 55vh;
+	display: flex;
+	flex-direction: column wrap;
+	justify-content: space-evenly;
+}
+
+
+.contact-links img {
+	height: 15vh;
+	object-fit: contain;
+}
+
+/* 286px, 800px*/
 /* Projects page-specific elements */
 .projects-listings {
 	display: flex;
@@ -197,4 +222,111 @@ footer a {
 	height: 45vh;
 	width: 45vw;
 	object-fit: contain;
+}
+
+@media (max-width: 500px) {
+	header {
+		width: 100%;
+		height: 25rem;
+		padding: 1% 0;
+	}
+	header a {
+		width: 40vw;
+	}
+
+	.nav-bar {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+
+	.intro-container {
+		width:100%;
+		height:30%;
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	.intro-img {
+		width: 80%;
+		object-fit: contain;
+	}
+	
+	.self-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+	
+	.intro-blurb {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.projects-display {
+		width: 100%;
+		height: 150vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-content: space-around;
+	}
+	
+	.projects-display a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.projects-display p {
+		width: 45vw;
+		object-fit: contain;
+	}
+	
+	.projects-display img {
+		height: 25vh;
+		width: 45vw;
+		object-fit: contain;
+	}
+
+	.projects-listings {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-content: space-between;
+	}
+	
+	.projects-listings a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.projects-listings p {
+		width: 90vw;
+		object-fit: contain;
+	}
+	
+	.projects-listings img {
+		height: 45vh;
+		width: 90vw;
+		object-fit: contain;
+	}
+
+	.about-me h2 {
+		font-size: 2rem;
+	}
+
+	footer a {
+		width: 50%;
+	}
+
+
+	
+	
 }
