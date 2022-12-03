@@ -1,1 +1,415 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto Mono";
+}
+
+body {
+	line-height: 1.2;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 5rem;
+}
+
+h2 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 3rem;
+}
+
+p, h3, a {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+}
+
+section {
+	padding: 4% 0;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	height:12rem;
+	padding: 1% 0;
+	background-color: lightblue;
+}
+
+.nav-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+
+header a, footer a {
+	padding: 1% 0;
+	width: 20%;
+	height: 3rem;
+	border-radius: 10px;
+	color: white;
+	background-color: lightsalmon;
+	text-decoration: none;
+	font-size: 2rem;
+  }
+
+.intro {
+	width: 100%;
+	background-color: rgb(215, 246, 250);
+}
+.intro-container {
+	width:100%;
+	height:30%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.intro-img {
+	width: 40%;
+	object-fit: contain;
+}
+
+.self-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.intro-blurb {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home-projects {
+	width: 100%;
+	height: 150vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+}
+
+.home-projects a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.home-projects p {
+	width: 23vw;
+	object-fit: contain;
+}
+
+.home-projects img {
+	height: 100%;
+	width: 23vw;
+	object-fit: contain;
+}
+
+footer {
+	width: 100%;
+	height:30vh;
+	padding: 1% 0;
+	background-color: lightblue;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+footer h3 {
+	margin: 2rem 0;
+}
+
+footer a {
+	width: 20%;
+}
+header a:hover, footer a:hover {
+	background-color: lightgreen;
+}
+
+.about-me {
+	height: 100%;
+	width: 100%;
+}
+
+.contact-links {
+	padding: 2% 0;
+	height: 55vh;
+	display: flex;
+	flex-direction: column wrap;
+	justify-content: space-evenly;
+}
+
+
+.contact-links img {
+	height: 15vh;
+	object-fit: contain;
+}
+
+
+/* Projects page-specific elements */
+.projects-listings {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
+.projects-listings a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.projects-listings p {
+	width: 45vw;
+	object-fit: contain;
+}
+
+.projects-listings img {
+	height: 45vh;
+	width: 45vw;
+	object-fit: contain;
+}
+
+@media (max-width: 800px) {
+	header {
+		width: 100%;
+		height: 100%;
+		padding: 1% 0;
+	}
+	header a {
+		margin: 1% 0;
+		width: 40vw;
+	}
+
+	.nav-bar {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+
+	.home-projects {
+		width: 100%;
+		height: 120vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-content: space-around;
+	}
+	
+	.home-projects a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.home-projects p {
+		width: 30vw;
+		object-fit: contain;
+	}
+	
+	.home-projects img {
+		height: 100%;
+		width: 30vw;
+		object-fit: contain;
+	}
+
+	.projects-listings {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-content: space-between;
+	}
+	
+	.projects-listings a {
+		margin: 2% 0 2% 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.projects-listings p {
+		width: 34vw;
+		object-fit: contain;
+	}
+	
+	.projects-listings img {
+		height: 100%;
+		width: 90vw;
+		object-fit: contain;
+	}
+
+	.about-me h2 {
+		font-size: 2rem;
+	}
+
+	footer a {
+		width: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+		width: 100%;
+		height: 40vh;
+		padding: 1% 0;
+	}
+	header a {
+		width: 40vw;
+	}
+
+	.nav-bar {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+
+	.intro-container {
+		width:100%;
+		height:30%;
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: space-evenly;
+	}
+	.intro-img {
+		width: 80%;
+		object-fit: contain;
+	}
+	
+	.self-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+	
+	.intro-blurb {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.home-projects {
+		width: 100%;
+		height: 150vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-content: space-around;
+	}
+	
+	.home-projects a {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.home-projects p {
+		width: 45vw;
+		object-fit: contain;
+	}
+	
+	.home-projects img {
+		height: 100%;
+		width: 45vw;
+		object-fit: contain;
+	}
+
+	.projects-listings {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-content: space-between;
+	}
+	
+	.projects-listings a {
+		margin: 2% 0 2% 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	
+	.projects-listings p {
+		width: 90vw;
+		object-fit: contain;
+	}
+	
+	.projects-listings img {
+		height: 100%;
+		width: 90vw;
+		object-fit: contain;
+	}
+
+	.about-me h2 {
+		font-size: 2rem;
+	}
+
+	footer a {
+		width: 50%;
+	}
+}
