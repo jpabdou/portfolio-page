@@ -164,8 +164,10 @@ header a, footer a {
 
 footer {
 	width: 100%;
-	height:30vh;
+	height:10vh;
 	padding: 1% 0;
+	position:fixed;
+	bottom: 0%;
 	background-color: lightblue;
 	display: flex;
 	flex-flow: column wrap;
@@ -185,8 +187,21 @@ header a:hover, footer a:hover {
 }
 
 .about-me {
+	width: 90%;
+	margin: 5px;
+	height: 70vh;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: space-evenly;
+
+}
+
+.about-me img {
 	height: 100%;
-	width: 100%;
+	width: 20vw;
+	object-fit: contain;
+	
 }
 
 .contact-links {
@@ -299,6 +314,17 @@ header a:hover, footer a:hover {
 		width: 90vw;
 		object-fit: contain;
 	}
+	
+	.about-me {
+		width: 90%;
+		margin: 5px;
+		height: 80vh;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: space-evenly;
+		justify-content: space-evenly;
+	
+	}
 
 	.about-me h2 {
 		font-size: 2rem;
@@ -403,6 +429,11 @@ header a:hover, footer a:hover {
 		height: 100%;
 		width: 90vw;
 		object-fit: contain;
+	}
+	
+	.about-me img {
+		display: none;
+		
 	}
 
 	.about-me h2 {
